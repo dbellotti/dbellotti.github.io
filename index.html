@@ -23,6 +23,22 @@
     	opacity: 0.7;
     }
     
+    .point-of-view {
+	width: 500px;
+
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+	
+	-webkit-perspective-origin: 50% 150%;
+	-moz-perspective-origin: 50% 150%;
+	-o-perspective-origin: 50% 150%;
+	-ms-perspective-origin: 50% 150%;
+	perspective-origin: 50% 150%;
+    }
+    
     .pyramid, .pyramid-outer, .pyramid-inner {
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
@@ -116,9 +132,7 @@
 </head>
 
 <body class="blue-bkg">
-    <div class="container centered">
-        <div id="triangle-up"></div>
-
+    <div class="container centered point-of-view">
         <div class="pyramid-outer">
             <div class="pyramid">
 	        <div class="pyramid-inner">
