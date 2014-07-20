@@ -1,11 +1,32 @@
 <head>
   <style>
+    .blue-bkg {
+      background-color: blue;
+    }
+  
     body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-}
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+      font-weight: 300;
+    }
+    
+    .centered {
+      margin: 100px auto;
+      width: 100%;
+    }
+    
+    #triangle-up {
+	    width: 0;
+    	height: 0;
+    	border-left: 50px solid transparent;
+    	border-right: 50px solid transparent;
+    	border-bottom: 100px solid red;
+    	opacity: 0.5;
+    }
   </style>
 </head>
-<body>
-  hello
+
+<body class="blue-bkg">
+  <div class="container">
+    <div id="traingle-up"></div>
+  </div>
 </body>
