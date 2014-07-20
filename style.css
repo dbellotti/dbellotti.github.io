@@ -7,9 +7,12 @@ body {
     font-weight: 300;
 }
 
+.container {
+    height: 300px;
+}
+
 .centered {
     margin: auto auto;
-    width: 100px;
 }
 
 #triangle-up {
@@ -22,7 +25,7 @@ body {
 }
 
 .point-of-view {
-    width: 500px;
+    width: 700px;
 
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
@@ -38,9 +41,9 @@ body {
 }
 
 .spinning {
-    -webkit-animation:rotate 4s linear infinite;
-    -moz-animation:rotate 4s linear infinite;
-    animation:rotate 4s linear infinite;
+    -webkit-animation:rotate 20s linear infinite;
+    -moz-animation:rotate 20s linear infinite;
+    animation:rotate 20s linear infinite;
 }
 
 @-moz-keyframes rotate { 100% { -moz-transform: rotateY(360deg); } }
@@ -55,8 +58,7 @@ body {
 }
 
 .pyramid {
-    width: 200;
-    height: 200px;
+    width: 300px;
     position: absolute;
 }
 
@@ -67,28 +69,28 @@ body {
 /* FACES */
 
 .pyramid-base, .pyramid-face {
-    opacity: 0.5;
+    opacity: 0.2;
     position: absolute;
 }
 
 .pyramid-base {
-    width: 100px;
-    height: 100px;
-    background-color: #ff0000;
-    //background-image: url(http://romanliutikov.com/lab/css3-3d-primitives/img.png);
+    width: 300px;
+    height: 300px;
+    background-color: black;
 
-    -webkit-transform: rotateX(90deg) translate3d(0, 0, -23px);
-    -moz-transform: rotateX(90deg) translate3d(0, 0, -23px);
-    -o-transform: rotateX(90deg) translate3d(0, 0, -23px);
-    -ms-transform: rotateX(90deg) translate3d(0, 0, -23px);
-    transform: rotateX(90deg) translate3d(0, 0, -23px);
+    -webkit-transform: rotateX(90deg) translate3d(0, 0, -69px);
+    -moz-transform: rotateX(90deg) translate3d(0, 0, -69px);
+    -o-transform: rotateX(90deg) translate3d(0, 0, -69px);
+    -ms-transform: rotateX(90deg) translate3d(0, 0, -69px);
+    transform: rotateX(90deg) translate3d(0, 0, -69px);
 }
 
 .pyramid-face {
     width:0;
     height:0;
-    border-left:50px solid transparent;
-    border-right:50px solid transparent;
+    border-left:150px solid transparent;
+    border-right:150px solid transparent;
+    border-bottom: 300px solid black;
 
     -webkit-transform-origin: 50% 87%;
     -moz-transform-origin: 50% 87%;
@@ -98,41 +100,33 @@ body {
 }
 
 .pyramid-face:nth-child(2) {
-    border-bottom:100px solid #e04545;
-
-    -webkit-transform: rotateX(30deg) translate3d(0, 0, 50px);
-    -moz-transform: rotateX(30deg) translate3d(0, 0, 50px);
-    -o-transform: rotateX(30deg) translate3d(0, 0, 50px);
-    -ms-transform: rotateX(30deg) translate3d(0, 0, 50px);
-    transform: rotateX(30deg) translate3d(0, 0, 50px);
+    -webkit-transform: rotateX(30deg) translate3d(0, 0, 150px);
+    -moz-transform: rotateX(30deg) translate3d(0, 0, 150px);
+    -o-transform: rotateX(30deg) translate3d(0, 0, 150px);
+    -ms-transform: rotateX(30deg) translate3d(0, 0, 150px);
+    transform: rotateX(30deg) translate3d(0, 0, 150px);
 }
 
 .pyramid-face:nth-child(3) {
-    border-bottom:100px solid #ccaf5a;
-
-    -webkit-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -50px);
-    -moz-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -50px);
-    -o-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -50px);
-    -ms-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -50px);
-    transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -50px);
+    -webkit-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -150px);
+    -moz-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -150px);
+    -o-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -150px);
+    -ms-transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -150px);
+    transform: rotateY(90deg) rotateX(-30deg) translate3d(0, 0, -150px);
 }
 
 .pyramid-face:nth-child(4) {
-    border-bottom:100px solid #97c25f;
-
-    -webkit-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 50px);
-    -moz-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 50px);
-    -o-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 50px);
-    -ms-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 50px);
-    transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 50px);
+    -webkit-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 150px);
+    -moz-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 150px);
+    -o-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 150px);
+    -ms-transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 150px);
+    transform: rotateY(90deg) rotateX(30deg) translate3d(0, 0, 150px);
 }
 
 .pyramid-face:nth-child(5) {
-    border-bottom:100px solid #4ccfc8;
-
-    -webkit-transform: rotateX(-30deg) translate3d(0, 0, -50px);
-    -moz-transform: rotateX(-30deg) translate3d(0, 0, -50px);
-    -o-transform: rotateX(-30deg) translate3d(0, 0, -50px);
-    -ms-transform: rotateX(-30deg) translate3d(0, 0, -50px);
-    transform: rotateX(-30deg) translate3d(0, 0, -50px);
+    -webkit-transform: rotateX(-30deg) translate3d(0, 0, -150px);
+    -moz-transform: rotateX(-30deg) translate3d(0, 0, -150px);
+    -o-transform: rotateX(-30deg) translate3d(0, 0, -150px);
+    -ms-transform: rotateX(-30deg) translate3d(0, 0, -150px);
+    transform: rotateX(-30deg) translate3d(0, 0, -150px);
 }
