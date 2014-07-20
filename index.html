@@ -39,6 +39,16 @@
 	perspective-origin: 50% 150%;
     }
     
+    .spinning {
+       -webkit-animation:rotate 4s linear infinite;
+       -moz-animation:rotate 4s linear infinite;
+       animation:rotate 4s linear infinite;
+    }
+
+    @-moz-keyframes rotate { 100% { -moz-transform: rotateY(360deg); } }
+    @-webkit-keyframes rotate { 100% { -webkit-transform: rotateY(360deg); } }
+    @keyframes rotate { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); }
+    
     .pyramid, .pyramid-outer, .pyramid-inner {
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
@@ -132,7 +142,7 @@
 </head>
 
 <body class="blue-bkg">
-    <div class="container centered point-of-view">
+    <div class="container centered point-of-view spinning">
         <div class="pyramid-outer">
             <div class="pyramid">
 	        <div class="pyramid-inner">
