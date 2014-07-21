@@ -1,5 +1,9 @@
 .blue-bkg {
     background-color: blue;
+    background: -webkit-linear-gradient(blue, red);
+    background: -o-linear-gradient(blue, red);
+    background: -moz-linear-gradient(blue, red);
+    background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
 }
 
 body {
@@ -8,6 +12,7 @@ body {
 }
 
 .container {
+    padding-top: 100px;
     height: 300px;
 }
 
