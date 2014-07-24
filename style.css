@@ -1,11 +1,3 @@
-.blue-bkg {
-    background-color: blue;
-    background: -webkit-linear-gradient(blue, red);
-    background: -o-linear-gradient(blue, red);
-    background: -moz-linear-gradient(blue, red);
-    background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
-}
-
 body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
@@ -46,14 +38,63 @@ body {
 }
 
 .spinning {
-    -webkit-animation:rotate 20s linear infinite;
-    -moz-animation:rotate 20s linear infinite;
-    animation:rotate 20s linear infinite;
+    -webkit-animation: rotate 20s linear infinite;
+    -moz-animation: rotate 20s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
 @-moz-keyframes rotate { 100% { -moz-transform: rotateY(360deg); } }
 @-webkit-keyframes rotate { 100% { -webkit-transform: rotateY(360deg); } }
 @keyframes rotate { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
+.blue-bkg {
+    -webkit-animation: blend 60s linear infinite;
+    -moz-animation: blend 60s linear infinite;
+    animation: blend 60s linear infinite;
+}
+
+@-moz-keyframes blend {    50% {
+        background: -webkit-linear-gradient(#660066, blue);
+        background: -o-linear-gradient(#660066, blue);
+        background: -moz-linear-gradient(#660066, blue);
+        background: url(bg-tile.png) repeat, linear-gradient(#660066, blue);
+    }
+    100% { 
+        background: -webkit-linear-gradient(blue, #660066);
+        background: -o-linear-gradient(blue, #660066);
+        background: -moz-linear-gradient(blue, #660066);
+        background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
+    }
+}
+
+@-webkit-keyframes blend {    50% {
+        background: -webkit-linear-gradient(#660066, blue);
+        background: -o-linear-gradient(#660066, blue);
+        background: -moz-linear-gradient(#660066, blue);
+        background: url(bg-tile.png) repeat, linear-gradient(#660066, blue);
+    }
+    100% { 
+        background: -webkit-linear-gradient(blue, #660066);
+        background: -o-linear-gradient(blue, #660066);
+        background: -moz-linear-gradient(blue, #660066);
+        background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
+    }
+}
+
+@keyframes blend {
+    50% {
+        background: -webkit-linear-gradient(#660066, blue);
+        background: -o-linear-gradient(#660066, blue);
+        background: -moz-linear-gradient(#660066, blue);
+        background: url(bg-tile.png) repeat, linear-gradient(#660066, blue);
+    }
+    100% { 
+        background: -webkit-linear-gradient(blue, #660066);
+        background: -o-linear-gradient(blue, #660066);
+        background: -moz-linear-gradient(blue, #660066);
+        background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
+    }
+}
 
 .pyramid, .pyramid-outer, .pyramid-inner {
     -webkit-transform-style: preserve-3d;
