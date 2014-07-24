@@ -53,7 +53,14 @@ body {
     animation: blend 60s linear infinite;
 }
 
-@-moz-keyframes blend {    50% {
+@-moz-keyframes blend {
+    0% { 
+        background: -webkit-linear-gradient(blue, #660066);
+        background: -o-linear-gradient(blue, #660066);
+        background: -moz-linear-gradient(blue, #660066);
+        background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
+    }
+    50% {
         background: -webkit-linear-gradient(#660066, blue);
         background: -o-linear-gradient(#660066, blue);
         background: -moz-linear-gradient(#660066, blue);
@@ -67,7 +74,14 @@ body {
     }
 }
 
-@-webkit-keyframes blend {    50% {
+@-webkit-keyframes blend {
+    0% { 
+        background: -webkit-linear-gradient(blue, #660066);
+        background: -o-linear-gradient(blue, #660066);
+        background: -moz-linear-gradient(blue, #660066);
+        background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
+    }
+    50% {
         background: -webkit-linear-gradient(#660066, blue);
         background: -o-linear-gradient(#660066, blue);
         background: -moz-linear-gradient(#660066, blue);
@@ -82,6 +96,12 @@ body {
 }
 
 @keyframes blend {
+    0% { 
+        background: -webkit-linear-gradient(blue, #660066);
+        background: -o-linear-gradient(blue, #660066);
+        background: -moz-linear-gradient(blue, #660066);
+        background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
+    }
     50% {
         background: -webkit-linear-gradient(#660066, blue);
         background: -o-linear-gradient(#660066, blue);
