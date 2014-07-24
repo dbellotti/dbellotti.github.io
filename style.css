@@ -38,37 +38,47 @@ body {
 }
 
 .spinning {
-    -webkit-animation: rotate 20s linear infinite;
-    -moz-animation: rotate 20s linear infinite;
-    animation: rotate 20s linear infinite;
+    -webkit-animation: rotate 60s linear infinite;
+    -moz-animation: rotate 60s linear infinite;
+    animation: rotate 60s linear infinite;
 }
 
 @-moz-keyframes rotate { 100% { -moz-transform: rotateY(360deg); } }
 @-webkit-keyframes rotate { 100% { -webkit-transform: rotateY(360deg); } }
 @keyframes rotate { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
 
-.blue-bkg {
-    -webkit-animation: blend 60s linear infinite;
-    -moz-animation: blend 60s linear infinite;
-    animation: blend 60s linear infinite;
+.blue-blend {
+    -webkit-animation: rgb 1200s linear infinite;
+    -moz-animation: rgb 1200s linear infinite;
+    animation: rgb 1200s linear infinite;
 }
 
-@-moz-keyframes blend {
-    0% {   background: url(bg-tile.png) repeat, linear-gradient(blue, #660066); }
-    50% {  background: url(bg-tile.png) repeat, linear-gradient(#660066, blue); }
-    100% { background: url(bg-tile.png) repeat, linear-gradient(blue, #660066); }
+.blue-gradient {
+    background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
 }
 
-@-webkit-keyframes blend {
-    0% {   background: url(bg-tile.png) repeat, linear-gradient(blue, #660066); }
-    50% {  background: url(bg-tile.png) repeat, linear-gradient(#660066, blue); }
-    100% { background: url(bg-tile.png) repeat, linear-gradient(blue, #660066); }
+// 33 red #660066
+// 66 lightblue #6d99d3
+
+@-moz-keyframes rgb {
+    0% {   background: url(bg-tile.png) repeat, blue; }
+    33% {  background: url(bg-tile.png) repeat, darkred; }
+    66% {   background: url(bg-tile.png) repeat, darkgreen; }
+    100% { background: url(bg-tile.png) repeat, darkblue; }
 }
 
-@keyframes blend {
-    0% {   background: url(bg-tile.png) repeat, linear-gradient(blue, #660066); }
-    50% {  background: url(bg-tile.png) repeat, linear-gradient(#660066, blue); }
-    100% { background: url(bg-tile.png) repeat, linear-gradient(blue, #660066); }
+@-webkit-keyframes rgb {
+    0% {   background: url(bg-tile.png) repeat, blue; }
+    33% {  background: url(bg-tile.png) repeat, darkred; }
+    66% {   background: url(bg-tile.png) repeat, darkgreen; }
+    100% { background: url(bg-tile.png) repeat, darkblue; }
+}
+
+@keyframes rgb {
+    0% {   background: url(bg-tile.png) repeat, blue; }
+    33% {  background: url(bg-tile.png) repeat, darkred; }
+    66% {   background: url(bg-tile.png) repeat, darkgreen; }
+    100% { background: url(bg-tile.png) repeat, darkblue; }
 }
 
 .pyramid, .pyramid-outer, .pyramid-inner {
