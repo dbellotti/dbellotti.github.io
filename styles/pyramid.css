@@ -54,31 +54,31 @@ body {
 }
 
 .blue-gradient {
-    background: url(bg-tile.png) repeat, linear-gradient(blue, #660066);
+    background: url(../images/bg-tile.png) repeat, linear-gradient(blue, #660066);
 }
 
 // 33 red #660066
 // 66 lightblue #6d99d3
 
 @-moz-keyframes rgb {
-    0% {   background: url(bg-tile.png) repeat, blue; }
-    33% {  background: url(bg-tile.png) repeat, darkred; }
-    66% {   background: url(bg-tile.png) repeat, darkgreen; }
-    100% { background: url(bg-tile.png) repeat, darkblue; }
+    0% {   background: url(../images/bg-tile.png) repeat, blue; }
+    33% {  background: url(../images/bg-tile.png) repeat, darkred; }
+    66% {   background: url(../images/bg-tile.png) repeat, darkgreen; }
+    100% { background: url(../images/bg-tile.png) repeat, darkblue; }
 }
 
 @-webkit-keyframes rgb {
-    0% {   background: url(bg-tile.png) repeat, blue; }
-    33% {  background: url(bg-tile.png) repeat, darkred; }
-    66% {   background: url(bg-tile.png) repeat, darkgreen; }
-    100% { background: url(bg-tile.png) repeat, darkblue; }
+    0% {   background: url(../images/bg-tile.png) repeat, blue; }
+    33% {  background: url(../images/bg-tile.png) repeat, darkred; }
+    66% {   background: url(../images/bg-tile.png) repeat, darkgreen; }
+    100% { background: url(../images/bg-tile.png) repeat, darkblue; }
 }
 
 @keyframes rgb {
-    0% {   background: url(bg-tile.png) repeat, blue; }
-    33% {  background: url(bg-tile.png) repeat, darkred; }
-    66% {   background: url(bg-tile.png) repeat, darkgreen; }
-    100% { background: url(bg-tile.png) repeat, darkblue; }
+    0% {   background: url(../images/bg-tile.png) repeat, blue; }
+    33% {  background: url(../images/bg-tile.png) repeat, darkred; }
+    66% {   background: url(../images/bg-tile.png) repeat, darkgreen; }
+    100% { background: url(../images/bg-tile.png) repeat, darkblue; }
 }
 
 .pyramid, .pyramid-outer, .pyramid-inner {
